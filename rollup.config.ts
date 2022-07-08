@@ -4,6 +4,7 @@ import {
   simpleReloader,
 } from "rollup-plugin-chrome-extension";
 import cleaner from "rollup-plugin-cleaner";
+import zip from "rollup-plugin-zip";
 import addIIFE from "./rollup-plugin-add-iife";
 
 export default {
@@ -18,5 +19,6 @@ export default {
     typescript({ outputToFilesystem: true }),
     cleaner({ targets: ["dist"] }),
     addIIFE({ target: /content/ }),
+    zip(),
   ],
 };

@@ -1,0 +1,25 @@
+{
+  "name": "Controller Visualizer",
+  "manifest_version": 3,
+  "description": "An extension that adds a visualization of controller input to the page.",
+  "icons": {
+    "128": "icons/icon128x128.png"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_title": "Display Controller Visualizer"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "service_worker": "background.ts"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["images/**/*.png", "./contentScript/content.ts"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}

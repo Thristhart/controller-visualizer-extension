@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "ES6",
+      "ES2016",
+      "ES2017.Object",
+      "ES2017.String",
+      "ES2019.Object",
+      "ES2015.Iterable",
+      "esnext.promise"
+    ],
+    "allowJs": false,
+    "allowUnreachableCode": false,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "rootDir": "./src",
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "preserveWatchOutput": true,
+    "target": "ES2019",
+    "skipLibCheck": true,
+    "pretty": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "incremental": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "include": ["src/**/*"]
+}

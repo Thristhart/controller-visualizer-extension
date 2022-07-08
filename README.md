@@ -1,0 +1,2 @@
+# Controller Visualizer
+A [Manifest v3](https://developer.chrome.com/docs/extensions/mv3/intro/) browser extension designed to show a visualization of controller inputs as an overlay on the current page.

@@ -18,7 +18,11 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["images/**/*.png", "./contentScript/content.ts"],
+      "resources": [
+        "images/*.png",
+        "images/**/*.png",
+        "./contentScript/content.ts"
+      ],
       "matches": ["https://*/*"]
     }
   ]

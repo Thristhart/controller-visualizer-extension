@@ -4,6 +4,7 @@ import {
   simpleReloader,
 } from "rollup-plugin-chrome-extension";
 import cleaner from "rollup-plugin-cleaner";
+import addIIFE from "./rollup-plugin-add-iife";
 
 export default {
   input: "src/manifest.json",
@@ -16,5 +17,6 @@ export default {
     simpleReloader(),
     typescript({ outputToFilesystem: true }),
     cleaner({ targets: ["dist"] }),
+    addIIFE({ target: /content/ }),
   ],
 };

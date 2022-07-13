@@ -7,7 +7,6 @@ const defaultCanvasHeight = 83;
 
 export function createCanvas() {
   const canvas = document.createElement("canvas");
-  canvas.id = `${chrome.runtime.id}-canvas`;
   const context = canvas.getContext("2d");
   if (!context) {
     throw new Error(
@@ -16,13 +15,9 @@ export function createCanvas() {
   }
   context.imageSmoothingEnabled = false;
 
-  document.body.appendChild(canvas);
-
   canvas.width = defaultCanvasWidth;
   canvas.height = defaultCanvasHeight;
 
-  canvas.style.position = "fixed";
-  canvas.style.zIndex = "100000000";
   canvas.style.imageRendering = "pixelated";
   canvas.style.pointerEvents = "none";
 
